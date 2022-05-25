@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html{
+     position: relative;
+}
+
+*{
+    margin : 0px;
+    padding : 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0f0f0;
+    font-family: 'Poppins', Verdana, sans-serif;
+    color: #111;
+}
+
+header{
+    top : 0;
+    position: sticky;
+    padding:20px 100px;
+    background-color: #f0f0f0;
+}
+
+nav {
+    display : flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+}
+
+.logo {
+    width: 10%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.navigation li {
+    display :inline-block;
+    padding: 5px 25px;
+    position:relative;
+
+}
+
+#dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f0f0f0;
+}
+
+#dropdown.active{
+    display:block;
+}
+
+nav a {
+    font-weight: 400;
+    text-decoration: none;
+    color: #111;
+}
+ 
+nav a:hover {
+    color: #9871F3;
+    font-weight: bold;
+}
+ 
+main{
+    padding: 20px 100px;
+    overflow: auto;
+}
+
+.container {
+    display : flex;
+}
+
+.container .text {
+    width: 58%;
+    padding: 100px 10px;
+}
+
+.container img {
+    width: 42%;
+    padding: 50px;
+}
+
+.classes {
+    margin: 30px 0px;
+    padding: 50px 0px;
+}
+
+.classes section {
+    display: flex;
+}
+
+.classes ul {
+    list-style-type: none;
+    width: 55%;
+    padding: 130px 50px 50px 90px;
+    align-items: center;
+    display: block;
+
+}
+
+.classes li {
+    font-style: italic;
+    padding: 20px;
+    font-size: large;
+}
+
+.classes li:hover{
+    padding-left: 90px;
+    color: #9871F3;
+}
+
+.classes img {
+    padding: 50px;
+    width: 45%;
+}
+
+.WTS {
+    padding: 50px 0px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.thumbnail {
+    display: flex;
+}
+
+.card {
+    width: 33.3%;
+    background-color: #9871F3;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    margin: 20px;
+    font-size: small;
+}
+
+article img{
+    max-width: 50%;
+    max-height: min-content;
+    margin-bottom: 5px;
+}
+
+h4,h5 {
+    margin-bottom: 5px;
+}
+
+article p{
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.card:hover{
+    background-color: #f0f0f0;
+    border: 5px solid #9871F3;
+    width: 60%;
+    font-size: medium;
+}
+
+.content2{
+    float:left;
+    width: 60%;
+    padding: 120px 0px;
+    align-items: center;
+}
+
+.reg {
+    background-color: #9871F3;
+    color: #f0f0f0;
+    border-radius: 20px;
+    text-align: center;
+    width: 50%;
+}
+
+.reg:hover{
+    background-color: #f0f0f0;
+    border: 5px solid #9871F3;
+    border-radius: 20px;
+    color: #9871F3;
+}
+
+.center {
+    text-align: center;
+    padding: 20px;
+}
+aside {
+    float: right;
+    width: 40%;
+    padding: 50px;
+    background-color: #f0f0f0;
+    border: 5px solid #9871F3;
+    border-radius: 20px;
+}
+
+aside img {
+    width: 40%;
+}
+
+th{
+    text-align: right;
+    padding-right: 10px;
+}
+
+aside:hover {
+    background-color: #9871F3;
+    color: #f0f0f0;
+}
+
+footer {
+    bottom:0;
+    width: 100%;
+    padding: 20px;
+    color: #f0f0f0;
+    background-color: #9871F3;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+
+    header{
+        padding: 30px;
+        text-align: center;
+    }
+
+    nav {
+        display: inline-block;
+    }
+    .logo {
+        width: 100%;
+    }
+    .logo img{
+        width: 50%;
+    }
+
+    .navigation {
+        width: 100%;
+        display: flex;
+    }
+
+    main {
+        padding: 30px;
+        overflow: auto;
+    }
+
+    .container {
+        display : block;
+    }
+
+    .container .text {
+        width: 100%;
+        padding: 50px;
+        font-size: medium;
+    }
+
+    .container img {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .classes img {
+        display: none;
+    }
+
+    .classes section{
+        display: block;
+    }
+
+    .classes ul {
+        width: 100%;
+        align-items: center;
+        padding: 20px;  
+    }
+
+    .classes li {
+        font-style: italic;
+        padding: 20px;
+        font-size: medium;
+    }
+    
+    .classes li:hover{
+        padding-left: 20px;
+        color: #9871F3;
+    }
+
+    .WTS{
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    .thumbnail {
+        display: block;
+    }
+
+    .card {
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .card:hover{
+        width: 100%;
+    }
+    
+    .content2, aside {
+        width: 100%;
+        padding: 0;
+        float: none;
+    }
+
+    .content2 {
+        text-align: center;
+        padding: 50px 20px; 
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .reg {
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    aside {
+        padding: 10px 20px 20px;
+        font-size: small;
+    }
+
+    
+
+}
